@@ -1,5 +1,6 @@
 #ifndef TILE_H
 #define TILE_H
+#include <string>
 
 namespace TicTacToe {
 class Tile
@@ -13,6 +14,9 @@ public:
 
     bool isCross();
     bool isNaught();
+
+    std::string toString();
+
 
 private:
     bool mIsCross = false;

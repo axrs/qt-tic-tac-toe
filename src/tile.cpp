@@ -15,3 +15,8 @@ bool Tile::isNaught()
 {
     return !mIsCross;
 }
+
+std::__1::string Tile::toString()
+{
+    return "Tile{isCross=" + std::to_string(mIsCross) + "}";
+}

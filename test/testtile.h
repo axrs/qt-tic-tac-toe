@@ -21,10 +21,28 @@ private slots:
 
     void testConstructor()
     {
-        // ToDo
         Tile t(true);
         EXPECT(t.isCross() == true);
         EXPECT(t.isNaught() == false);
+    }
+
+    void testConstructorForNaught()
+    {
+        Tile t(false);
+        EXPECT(t.isCross() == false);
+        EXPECT(t.isNaught() == true);
+    }
+
+    void testToString()
+    {
+        Tile t(true);
+        EXPECT(t.toString().compare("Tile{isCross=true}"));
+    }
+
+    void testToStringNaught()
+    {
+        Tile t(false);
+        EXPECT(t.toString().compare("Tile{isCross=false}"));
     }
 
     void cleanupTestCase()
