@@ -18,6 +18,7 @@ public:
 
     bool isCross() const;
     bool isNaught() const;
+    bool isEmpty() const;
     std::string toString() const;
 
 private:

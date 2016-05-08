@@ -25,6 +25,7 @@ private slots:
         Tile t(true);
         EXPECT(t.isCross() == true);
         EXPECT(t.isNaught() == false);
+        EXPECT(t.isEmpty() == false);
     }
 
     void testConstructorForNaught()
@@ -32,6 +33,7 @@ private slots:
         Tile t(false);
         EXPECT(t.isCross() == false);
         EXPECT(t.isNaught() == true);
+        EXPECT(t.isEmpty() == false);
     }
 
     void testToString()
