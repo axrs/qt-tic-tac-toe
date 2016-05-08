@@ -6,6 +6,7 @@
 
 #include "tile.h"
 
+using namespace TicTacToe;
 class TestTile : public QObject
 {
     Q_OBJECT
@@ -21,6 +22,9 @@ private slots:
     void testConstructor()
     {
         // ToDo
+        Tile t(true);
+        EXPECT(t.isCross() == true);
+        EXPECT(t.isNaught() == false);
     }
 
     void cleanupTestCase()

@@ -5,7 +5,17 @@ namespace TicTacToe {
 class Tile
 {
 public:
-    Tile();
+    /**
+     * @brief Tile
+     * @param isCross True if the tile represents a cross
+     */
+    Tile(bool isCross);
+
+    bool isCross();
+    bool isNaught();
+
+private:
+    bool mIsCross = false;
 };
 }
 
