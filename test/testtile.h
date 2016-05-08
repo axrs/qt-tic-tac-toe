@@ -3,6 +3,7 @@
 
 #include "autotest.h"
 #include <QDebug>
+#include <QString>
 
 #include "tile.h"
 
@@ -36,13 +37,13 @@ private slots:
     void testToString()
     {
         Tile t(true);
-        EXPECT(t.toString().compare("Tile{isCross=true}"));
+        EXPECT(t.toString().compare("Tile{isCross=1, isNaught=0}") == 0);
     }
 
     void testToStringNaught()
     {
         Tile t(false);
-        EXPECT(t.toString().compare("Tile{isCross=false}"));
+        EXPECT(t.toString().compare("Tile{isCross=0, isNaught=1}") == 0);
     }
 
     void cleanupTestCase()

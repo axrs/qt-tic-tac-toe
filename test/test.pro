@@ -12,7 +12,8 @@ SOURCES +=\
 
 HEADERS  += \
     autotest.h \
-    testtile.h
+    testtile.h \
+    testgame.h
 
 #Include dependencies if required
 LIBS +=

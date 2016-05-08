@@ -2,8 +2,9 @@
 #define TILE_H
 #include <string>
 
+#include "itile.h"
 namespace TicTacToe {
-class Tile
+class Tile : ITile
 {
 public:
     /**
@@ -11,12 +12,13 @@ public:
      * @param isCross True if the tile represents a cross
      */
     Tile(bool isCross);
+    ~Tile()
+    {
+    }
 
-    bool isCross();
-    bool isNaught();
-
-    std::string toString();
-
+    bool isCross() const;
+    bool isNaught() const;
+    std::string toString() const;
 
 private:
     bool mIsCross = false;
