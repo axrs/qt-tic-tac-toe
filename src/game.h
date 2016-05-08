@@ -12,13 +12,17 @@ public:
     Game();
     ~Game();
 
-    int moves();
-    int movesRemaining();
-    bool isOver();
-
+    int moves() const;
+    int movesRemaining() const;
+    bool isOver() const;
+    void addNaught(const int row, const int col);
+    void addCross(const int row, const int col);
 private:
     bool mFinished;
     std::vector<ITile *> mBoard;
+    std::vector<ITile> mBoard2;
+
+    void move(const int row, const int col, bool isCross);
 };
 }
 

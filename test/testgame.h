@@ -5,6 +5,7 @@
 #include <QDebug>
 
 #include "game.h"
+#include "tile.h"
 
 using namespace TicTacToe;
 class TestGame : public QObject
@@ -26,6 +27,19 @@ private slots:
         EXPECT(game.moves() == 0);
         EXPECT(game.movesRemaining() == 9);
         EXPECT(game.isOver() == false);
+    }
+
+    void testAddTile()
+    {
+        Game game;
+
+        game.addCross(0, 0);
+        EXPECT(game.moves() == 1);
+        EXPECT(game.movesRemaining() == 8);
+
+        game.addNaught(0, 1);
+        EXPECT(game.moves() == 2);
+        EXPECT(game.movesRemaining() == 7);
     }
 
     void cleanupTestCase()
