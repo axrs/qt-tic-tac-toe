@@ -23,6 +23,7 @@ private slots:
     {
         Game game;
 
+        EXPECT(game.moves() == 0);
         EXPECT(game.movesRemaining() == 9);
         EXPECT(game.isOver() == false);
     }

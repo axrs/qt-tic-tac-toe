@@ -6,6 +6,9 @@ namespace TicTacToe {
 class ITile
 {
 public:
+    ITile()
+    {
+    }
 
     ~ITile()
     {

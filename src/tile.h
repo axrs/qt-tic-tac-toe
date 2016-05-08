@@ -4,7 +4,7 @@
 
 #include "itile.h"
 namespace TicTacToe {
-class Tile : ITile
+class Tile : public ITile
 {
 public:
     /**

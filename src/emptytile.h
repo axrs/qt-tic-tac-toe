@@ -3,7 +3,7 @@
 
 #include "itile.h"
 namespace TicTacToe {
-class EmptyTile : ITile
+class EmptyTile : public ITile
 {
 public:
     /**
