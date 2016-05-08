@@ -12,7 +12,7 @@ SOURCES +=\
 
 HEADERS  += \
     autotest.h \
-    testremoveme.h
+    testtile.h
 
 #Include dependencies if required
 LIBS +=

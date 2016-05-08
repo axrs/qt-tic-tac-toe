@@ -1,7 +1,7 @@
 CONFIG += c++11
 
 HEADERS += \
-    $$PWD/removeme.h
+    $$PWD/tile.h
 
 SOURCES += \
-    $$PWD/removeme.cpp
+    $$PWD/tile.cpp
